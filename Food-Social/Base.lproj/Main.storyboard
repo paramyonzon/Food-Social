@@ -1,26 +1,140 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Social" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugF-E8-OYz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001a918c-ded9-467b-9c07-7eba2dd02f46" translatesAutoresizingMaskIntoConstraints="NO" id="MX4-67-Y2p">
+                                        <rect key="frame" x="0.0" y="17" width="414" height="147"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71764705882352942" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MX4-67-Y2p" firstAttribute="leading" secondItem="ugF-E8-OYz" secondAttribute="leading" id="FLs-XV-ZQ2"/>
+                                    <constraint firstAttribute="trailing" secondItem="MX4-67-Y2p" secondAttribute="trailing" id="gAk-Dv-eiM"/>
+                                    <constraint firstAttribute="bottom" secondItem="MX4-67-Y2p" secondAttribute="bottom" constant="17" id="s9Y-eo-RDV"/>
+                                    <constraint firstItem="MX4-67-Y2p" firstAttribute="top" secondItem="ugF-E8-OYz" secondAttribute="top" constant="17" id="zPf-Sa-tsw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woY-Mu-Sbe">
+                                <rect key="frame" x="0.0" y="683" width="414" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app was created so you can connect with your new college friends easier and faster on instagram. :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKN-Lg-yZM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KKN-Lg-yZM" firstAttribute="top" secondItem="woY-Mu-Sbe" secondAttribute="top" id="3Ru-hz-OAr"/>
+                                    <constraint firstItem="KKN-Lg-yZM" firstAttribute="leading" secondItem="woY-Mu-Sbe" secondAttribute="leading" id="ciM-pf-9Q0"/>
+                                    <constraint firstAttribute="bottom" secondItem="KKN-Lg-yZM" secondAttribute="bottom" id="nhh-Z0-LHw"/>
+                                    <constraint firstAttribute="trailing" secondItem="KKN-Lg-yZM" secondAttribute="trailing" id="xLW-pK-K5j"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UW-qP-YE9">
+                                <rect key="frame" x="94" y="198" width="226" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-Kh-jDe">
+                                <rect key="frame" x="133" y="226.33333333333331" width="149" height="149.99999999999994"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="89N-Fr-EQV"/>
+                                    <constraint firstAttribute="height" constant="150" id="HxC-v5-cil"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="instagram-Logo-PNG-Transparent-Background-download"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a0P-ic-bMk">
+                                <rect key="frame" x="50" y="396.33333333333337" width="314" height="125.00000000000011"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-1Y-WNm" customClass="FancyField" customModule="Food_Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JC6-M0-HLk" customClass="FancyField" customModule="Food_Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="314" height="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebi-Lt-Wt9" customClass="FancyBtn" customModule="Food_Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="314" height="35.000000000000057"/>
+                                        <color key="backgroundColor" red="0.71764705882352942" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="314" id="3Dt-h3-BbA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="woY-Mu-Sbe" secondAttribute="trailing" id="1UR-8B-rLK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ugF-E8-OYz" secondAttribute="bottom" constant="555" id="1sd-eT-aeG"/>
+                            <constraint firstItem="pLg-Kh-jDe" firstAttribute="centerX" secondItem="5UW-qP-YE9" secondAttribute="centerX" id="2zD-OX-hhv"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="683" id="4DS-XB-7gl"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="82Q-cq-eWF"/>
+                            <constraint firstAttribute="trailing" secondItem="woY-Mu-Sbe" secondAttribute="trailing" id="8gS-GU-42H"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CUd-r3-WVH"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E8p-Fo-equ"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="trailing" secondItem="ugF-E8-OYz" secondAttribute="trailing" id="Hz6-6l-mav"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="woY-Mu-Sbe" secondAttribute="bottom" id="ODp-0J-Xnd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="woY-Mu-Sbe" secondAttribute="bottom" id="QOW-ys-SIf"/>
+                            <constraint firstItem="ugF-E8-OYz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uun-MY-7Xp"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XTB-JH-Shm"/>
+                            <constraint firstItem="pLg-Kh-jDe" firstAttribute="top" secondItem="5UW-qP-YE9" secondAttribute="bottom" constant="8" symbolic="YES" id="a9b-0m-8t0"/>
+                            <constraint firstAttribute="trailing" secondItem="woY-Mu-Sbe" secondAttribute="trailing" id="aAV-KZ-CxX"/>
+                            <constraint firstItem="5UW-qP-YE9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="cgE-Sh-V37"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5UW-qP-YE9" secondAttribute="trailing" constant="74" id="d15-XE-kcW"/>
+                            <constraint firstItem="a0P-ic-bMk" firstAttribute="top" secondItem="pLg-Kh-jDe" secondAttribute="bottom" constant="20" id="gd5-BI-3ae"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="woY-Mu-Sbe" secondAttribute="bottom" id="lYH-Sj-Eft"/>
+                            <constraint firstItem="a0P-ic-bMk" firstAttribute="centerX" secondItem="pLg-Kh-jDe" secondAttribute="centerX" id="md9-YB-Zym"/>
+                            <constraint firstAttribute="trailing" secondItem="ugF-E8-OYz" secondAttribute="trailing" id="nDT-WP-lGC"/>
+                            <constraint firstItem="ugF-E8-OYz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qJE-Fb-v1S"/>
+                            <constraint firstItem="woY-Mu-Sbe" firstAttribute="leading" secondItem="ugF-E8-OYz" secondAttribute="leading" id="wbi-46-6Ju"/>
+                            <constraint firstItem="5UW-qP-YE9" firstAttribute="top" secondItem="ugF-E8-OYz" secondAttribute="bottom" constant="17" id="wvK-15-8IX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="130.43478260869566"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="001a918c-ded9-467b-9c07-7eba2dd02f46" width="1235" height="400"/>
+        <image name="instagram-Logo-PNG-Transparent-Background-download" width="1000" height="1000"/>
+    </resources>
 </document>
